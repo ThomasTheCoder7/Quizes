@@ -23,10 +23,9 @@ public class Q7 {
 
     static int count = 0;
     static int[] a3;
+
     public static int[] merge(int[] a1,int[] a2){
-        if(count == 0){
-            a3 = new int[a1.length+a2.length];
-        }
+        if(count == 0){ a3 = new int[a1.length+a2.length]; }
         if(count < a1.length){ a3[count]=a1[count]; count++;  merge(a1,a2);}
 
         if(count >= a1.length&&count-a1.length<a2.length){ a3[count] = a2[count-a1.length]; count++; merge(a1,a2); }
