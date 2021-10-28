@@ -75,12 +75,12 @@ public class Stack {
 
     public static void main(String[] args){
         int[] A = {3,5,3,11,5,2,5,11,2};
-        methodC(10);
+        mystery4(128);
 
 
 
     }
-    public static int mystery3(int n) {
+    public static int mystery4(int n) {
         int count = 1;
         while(count < n){
             count = count * 2;
