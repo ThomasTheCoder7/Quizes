@@ -74,21 +74,22 @@ public class Stack {
 
 
     public static void main(String[] args){
-        int[] A = {3,5,3,11,5,2,5,11,2};
-        mystery4(128);
+    mystery1(64);
+
 
 
 
     }
-    public static int mystery4(int n) {
+    public static int mystery1(int n) {
         int count = 1;
         while(count < n){
-            count = count * 2;
-            n = n/4;
+            count = count +1;
+            n = n/2;
         }
         System.out.println(count);
         return count;
     }
+
 
 
 
